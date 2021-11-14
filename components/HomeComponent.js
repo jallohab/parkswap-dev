@@ -8,7 +8,7 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-import { Avatar } from "react-native-elements";
+import { Avatar, Card } from "react-native-elements";
 
 const image = {
   uri: "https://www.proficientz.com/wp-content/uploads/2018/08/product-marketing-roadmap.jpg",
@@ -51,37 +51,29 @@ const ParkSwapAvator = () => {
           justifyContent: "space-evenly",
           marginTop: 50,
           marginLeft: 22,
+          marginBottom: 20,
           // borderWidth: 1,
         }}
       >
-        <TouchableOpacity
-          style={{
-            // borderWidth: 5,
-            borderColor: "rgba(0,0,0,0.2)",
-            alignItems: "center",
-            justifyContent: "center",
-            width: 162,
-            height: 45,
-            backgroundColor: "#b98046",
-            borderRadius: 2,
-          }}
-        >
+        <TouchableOpacity style={styles.button}>
           <Text>LOOKING FOR PARKING</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={{
-            // borderWidth: 5,
-            borderColor: "rgba(0,0,0,0.2)",
-            alignItems: "center",
-            justifyContent: "center",
-            width: 162,
-            height: 45,
-            backgroundColor: "#b98046",
-            borderRadius: 2,
-          }}
-        >
+        <TouchableOpacity style={styles.button}>
           <Text>LEAVING A PARKING</Text>
         </TouchableOpacity>
+      </View>
+      <View>
+        <Card>
+          <Text style={{ textAlign: "center", color: "blue", fontSize: 19 }}>
+            Helping is our favorite things to do.
+          </Text>
+          <Text style={{ textAlign: "center", color: "blue", fontSize: 19 }}>
+            Share the app to a friends/family.
+          </Text>
+          <Text style={{ textAlign: "center", color: "blue", fontSize: 19 }}>
+            Help them get that parking.
+          </Text>
+        </Card>
       </View>
     </View>
   );
@@ -102,19 +94,14 @@ const Home = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    // flex: 1,
-    // marginTop: 330,
-  },
-
-  image: {
-    flex: 1,
-    width: null,
-    height: null,
-  },
-  title: {
-    fontSize: 22,
-    textAlign: "center",
+  button: {
+    borderColor: "rgba(0,0,0,0.2)",
+    alignItems: "center",
+    justifyContent: "center",
+    width: 162,
+    height: 45,
+    backgroundColor: "#b98046",
+    borderRadius: 2,
   },
 });
 
