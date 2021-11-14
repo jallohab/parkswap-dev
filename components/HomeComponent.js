@@ -63,14 +63,14 @@ const ParkSwapAvator = () => {
         </TouchableOpacity>
       </View>
       <View>
-        <Card>
-          <Text style={{ textAlign: "center", color: "blue", fontSize: 19 }}>
+        <Card wrapperStyle={{ borderColor: "red" }}>
+          <Text style={{ textAlign: "center", color: "black", fontSize: 19 }}>
             Helping is our favorite things to do.
           </Text>
-          <Text style={{ textAlign: "center", color: "blue", fontSize: 19 }}>
+          <Text style={{ textAlign: "center", color: "black", fontSize: 19 }}>
             Share the app to a friends/family.
           </Text>
-          <Text style={{ textAlign: "center", color: "blue", fontSize: 19 }}>
+          <Text style={{ textAlign: "center", color: "black", fontSize: 19 }}>
             Help them get that parking.
           </Text>
         </Card>
